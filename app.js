@@ -72,9 +72,7 @@ async function parseThankYou(ctx) {
 
     ctx.cookies.set('demo-requested', JSON.stringify(cookieObj), {
         httpOnly: false,
-        expires: new Date(sevenMinutes),
-        // secure: true,
-        // signed: true
+        expires: new Date(sevenMinutes)
     });
 
     ctx.redirect('/thank-you');
