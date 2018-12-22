@@ -1,0 +1,22 @@
+input:not([value="submit"]) {
+    font-family: 'Gotham-Book';
+    width: 100%;
+    color: $text;
+    height: 36px;
+    padding: 10px;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 1.25;
+    background: $white;
+    border-radius: 0px;
+    margin-bottom: 12.5px;
+    border: 1px solid $backgroundSecond;
+
+    &:focus {
+        color: $text;
+        background-color: $white;
+        border-color: #ff9999;
+        outline: 0;
+        box-shadow: 0 0 0 0.1rem rgba(244, 126, 66, 0.25);
+    }
+}

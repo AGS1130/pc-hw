@@ -1,0 +1,57 @@
+<div id="thankYouPage">
+    <div class="container header">
+        <h1>Thank You
+            <%= firstName || lastName %>!</h1>
+        <p>
+            A Procore event planner will contact you shortly at
+            <%= email %> to confirm your RSVP.
+            <br>
+            In the meantime, here are some resources to learn more about the event topics.
+        </p>
+    </div>
+    <div class="container cards">
+        <div class="card-group">
+            <div class="card">
+                <img class="card-img-top w-100 d-block" src="img/card-woman-demo.jpg">
+                <div class="card-body">
+                    <h6 class="card-title">VIDEO</h6>
+                    <h4 class="card-title">Procore Video Tour</h4>
+                    <p class="card-text">
+                        Dive in and see all of our products, explore different processes within the Procore app, and
+                        discover how our Customer Success Team works.
+                    </p>
+                    <a class="button btn-default" type="button" href="http://procore.com/tour" target="_blank">WATCH
+                        NOW</a>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-img-top w-100 d-block" src="img/card-construction-workers-plan.jpg">
+                <div class="card-body">
+                    <h6 class="card-title">EBOOK</h6>
+                    <h4 class="card-title">Construction Software Buyer’s Guide</h4>
+                    <p class="card-text">
+                        A step-by-step guide to building your software-buying team, assessing your needs as a company,
+                        and determining what you want in a solution.
+                    </p>
+                    <a class="button btn-default" type="button" href="https://procore.com/downloads/ebooks/Construction_Software_Buyers_Guide.pdf"
+                        download="Construction Software Buyer’s Guide">DOWNLOAD</a>
+                </div>
+            </div>
+            <% if(guests < 3 || typeof guests === 'undefined'){ %>
+            <div class="card">
+                <img class="card-img-top w-100 d-block" src="img/card-analytics-devices.jpg">
+                <div class="card-body">
+                    <h6 class="card-title">EBOOK</h6>
+                    <h4 class="card-title">Procore Customer Survey: Return on Investment</h4>
+                    <p class="card-text">
+                        We surveyed 967 of our clients ranging from small to medium to enterprise companies, to find
+                        out how their projects are running since they started using Procore.
+                    </p>
+                    <a class="button btn-default" type="button" href="https://procore.com/downloads/ebooks/Emerging_ROI_Overview_2018.pdf">READ
+                        THE REPORT</a>
+                </div>
+            </div>
+            <% } %>
+        </div>
+    </div>
+</div>

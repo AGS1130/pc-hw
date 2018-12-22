@@ -1,0 +1,83 @@
+.button.btn-default {
+    font-family: 'Gotham';
+    cursor: pointer;
+    font-size: 13px;
+    font-weight: 500;
+    border-radius: 0;
+    padding: 15px 30px;
+    color: $procoreBlack;
+    text-decoration: none;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    background-color: transparent;
+    border: 2px solid $procoreBlack;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    @extend %transitions;
+
+    &:hover,
+    &:focus {
+        color: $white !important;
+        box-shadow: none;
+        border-color: $procoreBlack;
+        background-color: $procoreBlack;
+        @extend %transitions;
+    }
+
+    &.btn-outline-white {
+        color: $white;
+        border-color: $white;
+        background-color: transparent;
+
+        &:hover,
+        &:focus {
+            color: $procoreBlack;
+            box-shadow: none;
+            border-color: $white;
+            background-color: $white;
+        }
+    }
+
+    &.btn-fill-black {
+        color: $white;
+        border-color: $procoreBlack;
+        background-color: $procoreBlack;
+
+        &:hover,
+        &:focus {
+            color: $procoreBlack;
+            box-shadow: none;
+            border-color: $procoreBlack;
+            background-color: transparent;
+        }
+    }
+
+    &.btn-fill-white {
+        color: $procoreBlack;
+        border-color: $white;
+        background-color: $white;
+
+        &:hover,
+        &:focus {
+            color: $white;
+            box-shadow: none;
+            border-color: $white;
+            background-color: transparent;
+        }
+    }
+
+    &.btn-fill-orange {
+        color: $white;
+        border-color: $procoreOrange;
+        background-color: $procoreOrange;
+
+        &:hover,
+        &:focus {
+            color: $white;
+            box-shadow: none;
+            border-color: #f79962;
+            background-color: #f79962;
+        }
+    }
+}
