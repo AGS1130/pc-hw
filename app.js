@@ -54,7 +54,9 @@ async function thankYou(ctx) {
             firstName: cookie.firstName,
             lastName: cookie.lastName,
             email: cookie.email,
-            guests: cookie.guests
+            guests: cookie.guests,
+            nameFail: 'so much',
+            emailFail: 'your email'
         });
     } else {
         ctx.redirect('/');

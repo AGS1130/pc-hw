@@ -1,10 +1,10 @@
 <div id="thankYouPage">
     <div class="container header">
         <h1>Thank You
-            <%= firstName || lastName %>!</h1>
+            <%= firstName || lastName || nameFail %>!</h1>
         <p>
             A Procore event planner will contact you shortly at
-            <%= email %> to confirm your RSVP.
+            <%= email || emailFail %> to confirm your RSVP.
             <br>
             In the meantime, here are some resources to learn more about the event topics.
         </p>
