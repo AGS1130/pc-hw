@@ -1,18 +1,16 @@
 #thankYouPage {
-    .container {
-        &.header {
-            text-align: center;
-            animation: bounce-in 1.8s;
-        }
+    .header {
+        text-align: center;
+        animation: bounce-in 1.8s;
+    }
 
-        &.cards {
-            .card-group {
-                .card {
-                    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
-                    border-radius: 0.5rem;
-                    animation: vertical-flip 1.8s;
-                    margin: 8px;
-                }
+    .cards {
+        .card-group {
+            .card {
+                box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+                border-radius: 0.5rem;
+                animation: vertical-flip 1.8s;
+                margin: 8px;
             }
         }
     }

@@ -35,7 +35,10 @@ router.get('/thank-you', thankYou);
 
 // Show Landing Page
 async function landingPage(ctx) {
-    await ctx.render('landing-page');
+    await ctx.render('landing-page', {
+        title: 'RSVP',
+        className: 'container'
+    });
 }
 
 // Show Thank You Page
@@ -46,6 +49,8 @@ async function thankYou(ctx) {
     if (cookie) {
         cookie = JSON.parse(cookie);
         await ctx.render('thank-you', {
+            title: 'Thank You',
+            className: '',
             firstName: cookie.firstName,
             lastName: cookie.lastName,
             email: cookie.email,
